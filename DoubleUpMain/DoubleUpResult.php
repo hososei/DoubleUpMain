@@ -7,6 +7,7 @@
     <p>ダブルアップゲーム<br>
     </p>
     <?php
+    echo "string";
     ?>
     <form action="DoubleUpChoice.php">
       <input type="submit" value="続行">
