@@ -11,8 +11,8 @@
     $max = 52;
     $openCard = 0;
     $closeCard = 0;
-    $openCard = mt-rand($min,$max);
-    $closeCard = mt-rand($min,$max);
+    $openCard = mt_rand($min,$max);
+    $closeCard = mt_rand($min,$max);
     echo "openCard";
     echo "closeCard";
     ?>
