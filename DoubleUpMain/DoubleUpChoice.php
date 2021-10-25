@@ -17,7 +17,7 @@
     echo "closeCard";
     ?>
     <!-- 上の関数でランダムに選んだ画像の表示 -->
-    <form>
+    <form action="DoubleUpResult.php">
       <input type="submit" value="up">
       <input type="submit" value="down">
     </form>
