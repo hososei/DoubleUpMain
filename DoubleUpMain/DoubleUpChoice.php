@@ -13,8 +13,8 @@
     $closeCard = 0;
     $openCard = mt_rand($min,$max);
     $closeCard = mt_rand($min,$max);
-    echo "openCard";
-    echo "closeCard";
+    echo "$openCard";
+    echo "$closeCard";
     ?>
     <!-- 上の関数でランダムに選んだ画像の表示 -->
     <form action="DoubleUpResult.php">
