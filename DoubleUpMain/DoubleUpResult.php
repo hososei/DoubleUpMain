@@ -6,9 +6,11 @@
   <body bgcolor="#FFDDDD">
     <p>ダブルアップゲーム<br>
     </p>
-    <form>
-      <input type="submit" value="続行" action="DoubleUpChoice.php">
-      <input type="submit" value="ゲームを終了しスコアを確定する"action="DoubleUpTop.php">
+    <form action="DoubleUpChoice.php">
+      <input type="submit" value="続行">
+    </form>
+    <form action="DoubleUpTop.php">
+      <input type="submit" value="ゲームを終了しスコアを確定する">
     </form>
   </body>
 </html>
