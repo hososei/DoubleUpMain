@@ -21,8 +21,9 @@
     <!-- 上の関数でランダムに選んだ画像の表示 -->
     <img src="css/c1.png">
     <img src="css/<?php echo "$closeCard"; ?>.png">
-    <form action="DoubleUpResult.php">
+    <form action="DoubleUpResult.php" method="get">
       <input type="submit" value="up">
+      <button type="submit" name="submitup" value="up">上</button>
       <input type="submit" value="down">
     </form>
   </body>
