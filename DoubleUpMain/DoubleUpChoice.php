@@ -17,11 +17,10 @@
     $closeCard = randomNumber(1,52);
     echo "$openCard";
     echo "$closeCard";
-    header('Content-type: image/png');
-    readfile("css/"$closeCard".png");
     ?>
     <!-- 上の関数でランダムに選んだ画像の表示 -->
     <img src="css/c1.png">
+    <img src="css/<?php echo "$closeCard"; ?>.png">
     <form action="DoubleUpResult.php">
       <input type="submit" value="up">
       <input type="submit" value="down">
