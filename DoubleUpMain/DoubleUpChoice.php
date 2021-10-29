@@ -20,11 +20,12 @@
     ?>
     <!-- 上の関数でランダムに選んだ画像の表示 -->
     <img src="css/c1.png">
-    <img src="css/<?php echo "$closeCard"; ?>.png">
+    <img src="css/<?php echo "$openCard"; ?>.png">
     <form action="DoubleUpResult.php" method="get">
-      <input type="submit" value="up">
-      <button type="submit" name="submitup" value="up">上</button>
-      <input type="submit" value="down">
+      <input type="submit" name="choice" value="up">
+      <input type="submit" name="choice" value="down">
+      <input type="hidden" value=<?php echo "$openCard"; ?>  name="openCard">
+      <input type="hidden" value=<?php echo "$closeCard"; ?>  name="closeCard">
     </form>
   </body>
 </html>
