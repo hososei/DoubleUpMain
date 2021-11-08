@@ -1,4 +1,4 @@
-<html>
+﻿<html>
   <head lang="ja">
     <meta http-equiv="Content-Type" content="text/html; charset=utf8">
     <title>ダブルアップゲーム</title>

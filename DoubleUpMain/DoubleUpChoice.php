@@ -15,8 +15,10 @@
     $closeCard = 0;
     $openCard = randomNumber(1,52);
     $closeCard = randomNumber(1,52);
-    echo "$openCard";
-    echo "$closeCard";
+    //echo "$openCard";
+    //echo "<br>";
+    //echo "$closeCard";
+    //echo "<br>";
     ?>
     <!-- 上の関数でランダムに選んだ画像の表示 -->
     <img src="css/c1.png">
