@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf8">
     <title>ダブルアップゲーム</title>
   </head>
-  <body bgcolor="#FFDDDD">
+  <body bgcolor="#008000">
     <p>ダブルアップゲーム<br>
       ダブルアップゲームの説明<br>
     </p>

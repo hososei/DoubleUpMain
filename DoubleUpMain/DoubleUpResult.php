@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf8">
     <title>ダブルアップゲーム</title>
   </head>
-  <body bgcolor="#FFDDDD">
+  <body bgcolor="#008000">
     <p>ダブルアップゲーム<br>
     </p>
     <?php
@@ -45,6 +45,7 @@
     echo numberJudge($closeCard);echo "<br>";
     echo numberJudge($openCard);echo "<br>";
     //数字の大きさの判定
+    //スコア判定を作成すること
     switch($choice){
       case 'up':
         if(numberJudge($openCard)<numberJudge($closeCard)){

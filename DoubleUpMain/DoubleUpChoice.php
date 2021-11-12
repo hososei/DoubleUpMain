@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf8">
     <title>ダブルアップゲーム</title>
   </head>
-  <body bgcolor="#FFDDDD">
+  <body bgcolor="#008000">
     <!-- ランダムに二枚のカードを抽出し片方は表、片方は裏として画像を表示する -->
     <?php
     //ランダムにカードを選択する関数
