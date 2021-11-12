@@ -11,7 +11,7 @@
     $choice=$_GET['choice'];
     $closeCard=$_GET["closeCard"];
     $openCard=$_GET["openCard"];
-    $totalScore=$_GET['totalScore'];
+    $totalScore=$_GET["totalScore"];
     ?>
     <img src="css/<?php echo "$closeCard"; ?>.png">
     <img src="css/<?php echo "$openCard"; ?>.png">
@@ -103,6 +103,7 @@
     </form>
     <form action="DoubleUpTop.php">
       <input type="submit" value="ゲームを終了しスコアを確定する">
+      <input type="hidden" value=<?php echo $totalScore; ?> name="highestScore">
     </form>
   </body>
 </html>
