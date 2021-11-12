@@ -51,9 +51,15 @@
       $score=0;
       if($y<$z){
          $score=pow(2,$z-$y);
+         if($score>500){
+           $score=500;
+         }
          return $score;
       }if($y>$z){
         $score=pow(2,$y-$z);
+        if($score>500){
+          $score=500;
+        }
         return $score;
       }if($y==$z){
         return $score;
