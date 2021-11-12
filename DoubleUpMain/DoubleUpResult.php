@@ -4,7 +4,7 @@
     <title>ダブルアップゲーム</title>
   </head>
   <body bgcolor="#008000">
-    <p>ダブルアップゲーム<br>
+    <h1><p style="color:red">ダブルアップゲーム</h1><br>
     </p>
     <?php
     //前述の選択を表示
@@ -50,10 +50,10 @@
     function numberDifference($y,$z){
       $score=0;
       if($y<$z){
-         $score=$z-$y;
+         $score=pow(2,$z-$y);
          return $score;
       }if($y>$z){
-        $score=$y-$z;
+        $score=pow(2,$y-$z);
         return $score;
       }if($y==$z){
         return $score;
@@ -90,7 +90,7 @@
         break;
       }
     ?>
-    あなたの今の通算スコアは<?php echo $totalScore; ?>です<br>
+    あなたの今の通算スコアは<span style="color:red"><?php echo $totalScore; ?></span>です<br>
     <form action="DoubleUpChoice.php">
       <input type="submit" value="続行">
       <input type="hidden" value=<?php echo $totalScore; ?> name="totalScore">
