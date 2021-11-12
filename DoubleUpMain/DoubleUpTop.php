@@ -14,10 +14,6 @@
     </p>
     <?php
       $totalScore=0;
-      $higherScore=$_GET["highestScore"];
-      if($higherScore>$highestScore){
-        $highestScore=$higherScore;
-      }
      ?>
      <h2>最高スコア</h2><br>
      <p style="color:red"><?php echo "$highestScore"; ?></p>
