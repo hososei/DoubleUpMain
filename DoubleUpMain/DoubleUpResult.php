@@ -11,6 +11,7 @@
     $choice=$_GET['choice'];
     $closeCard=$_GET["closeCard"];
     $openCard=$_GET["openCard"];
+    $totalScore=$_GET['totalScore'];
     ?>
     <img src="css/<?php echo "$closeCard"; ?>.png">
     <img src="css/<?php echo "$openCard"; ?>.png">
@@ -42,33 +43,46 @@
 
     }
     echo "<br>";
-    echo numberJudge($closeCard);echo "<br>";
-    echo numberJudge($openCard);echo "<br>";
+    //デバック用の下記二行
+    //echo numberJudge($closeCard);echo "<br>";
+    //echo numberJudge($openCard);echo "<br>";
     //数字の大きさの判定
+    function numberDifference($y,$z){
+      $score=0;
+      if($y<$z){
+         $score=$z-$y;
+         return $score;
+      }if($y>$z){
+        $score=$y-$z;
+        return $score;
+      }if($y==$z){
+        return $score;
+      }else{
+        return $score;
+      }
+    }
     //スコア判定を作成すること
     switch($choice){
       case 'up':
         if(numberJudge($openCard)<numberJudge($closeCard)){
-          //あたり なんか書いとけ
           echo "あたり";
+          $totalScore+=numberDifference(numberJudge($openCard),numberJudge($closeCard));
         }elseif(numberJudge($openCard)==numberJudge($closeCard)){
-          //持ち越ししろ
           echo "同値";
         }else{
-          //は　ず　れ　じゃあな
           echo "はずれ";
+          $totalScore=0;
         }
         break;
       case 'down':
         if(numberJudge($openCard)>numberJudge($closeCard)){
-          //あたり　なんか書いとけ
           echo "あたり";
+          $totalScore+=numberDifference(numberJudge($openCard),numberJudge($closeCard));
         }elseif(numberJudge($openCard)==numberJudge($closeCard)){
-          //持ち越ししろ
           echo "同値";
         }else{
-          //は　ず　れ　じゃあな
           echo "はずれ";
+          $totalScore=0;
         }
         break;
       default :
@@ -76,8 +90,10 @@
         break;
       }
     ?>
+    あなたの今の通算スコアは<?php echo $totalScore; ?>です<br>
     <form action="DoubleUpChoice.php">
       <input type="submit" value="続行">
+      <input type="hidden" value=<?php echo $totalScore; ?> name="totalScore">
     </form>
     <form action="DoubleUpTop.php">
       <input type="submit" value="ゲームを終了しスコアを確定する">
