@@ -7,11 +7,6 @@
     <h1><p style="color:red">ダブルアップゲーム</h1><br>
     <!-- ランダムに二枚のカードを抽出し片方は表、片方は裏として画像を表示する -->
     <?php
-    //ランダムにカードを選択する関数
-    function randomNumber($min,$max){
-      $num = mt_rand($min,$max);
-      return $num;
-    }
     $openCard = 0;
     $closeCard = 0;
     $openCard = randomNumber(1,52);
