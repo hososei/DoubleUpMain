@@ -40,7 +40,6 @@
           //print $ans;
           break ;
       }
-
     }
     echo "<br>";
     //デバック用の下記二行
