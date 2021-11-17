@@ -14,6 +14,7 @@
     </p>
     <?php
       $totalScore=0;
+      $highestScore=$_GET['highestScore']
      ?>
      <h2>最高スコア</h2><br>
      <p style="color:red"><?php echo "$highestScore"; ?></p>

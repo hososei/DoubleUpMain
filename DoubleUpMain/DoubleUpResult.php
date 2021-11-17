@@ -7,6 +7,7 @@
     <h1><p style="color:red">ダブルアップゲーム</h1><br>
     </p>
     <?php
+    require_once 'function.php';
     //前述の選択を表示
     $choice=$_GET['choice'];
     $closeCard=$_GET["closeCard"];
